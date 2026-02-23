@@ -1,0 +1,99 @@
+Index: ../3d-printing/app/globals.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@import \"tailwindcss\";\n\n:root {\n  --background: #ffffff;\n  --foreground: #171717;\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-geist-sans);\n  --font-mono: var(--font-geist-mono);\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --background: #0a0a0a;\n    --foreground: #ededed;\n  }\n}\n\nbody {\n  background: var(--background);\n  color: var(--foreground);\n  font-family: Arial, Helvetica, sans-serif;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../3d-printing/app/globals.css b/../3d-printing/app/globals.css
+--- a/../3d-printing/app/globals.css	(revision c18eeb69f026a645d0e66025eafaf9e9c32cab8e)
++++ b/../3d-printing/app/globals.css	(date 1771837008029)
+@@ -3,6 +3,9 @@
+ :root {
+   --background: #ffffff;
+   --foreground: #171717;
++  /* Define the missing properties here */
++  --font-geist-sans: "Geist Sans", sans-serif;
++  --font-geist-mono: "Geist Mono", monospace;
+ }
+ 
+ @theme inline {
+Index: ../3d-printing/.prettierrc
+===================================================================
+diff --git a/../3d-printing/.prettierrc b/../3d-printing/.prettierrc
+deleted file mode 100644
+--- a/../3d-printing/.prettierrc	(revision c18eeb69f026a645d0e66025eafaf9e9c32cab8e)
++++ /dev/null	(revision c18eeb69f026a645d0e66025eafaf9e9c32cab8e)
+@@ -1,5 +0,0 @@
+-{
+-  "singleQuote": true,
+-  "printWidth": 80,
+-  "tabWidth": 2
+-}
+Index: ../3d-printing/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"81f0499d-954d-4001-9617-4927e5132806\" name=\"Changes\" comment=\"project setup\">\n      <change beforePath=\"$PROJECT_DIR$/.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.prettierrc\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"EmbeddingIndexingInfo\">\n    <option name=\"cachedIndexableFilesCount\" value=\"7\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"bakar-sage101\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/bakar-sage101/NextJS_3DPrintingApp.git\",\n    \"accountId\": \"95643a50-f635-4478-ae14-1f9611509936\"\n  }\n}]]></component>\n  <component name=\"McpProjectServerCommands\">\n    <commands />\n    <urls />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 2\n}]]></component>\n  <component name=\"ProjectId\" id=\"39zg7nXEW6sbcH3KxRJSby4CZwh\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"RunOnceActivity.MCP Project settings loaded\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"javascript.preferred.runtime.type.id\": \"node\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"onboarding.tips.debug.path\": \"/Users/office/WebstormProjects/3D-Printing/src/main.ts\",\n    \"settings.editor.selected.configurable\": \"ml.llm.AcpAgentsConfigurable\",\n    \"ts.external.directory.path\": \"/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"81f0499d-954d-4001-9617-4927e5132806\" name=\"Changes\" comment=\"\" />\n      <created>1771704149031</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1771704149031</updated>\n      <workItem from=\"1771704150102\" duration=\"4359000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"project setup\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1771704932719</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1771704932719</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"project setup\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1771707601837</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1771707601837</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"project setup\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"project setup\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../3d-printing/.idea/workspace.xml b/../3d-printing/.idea/workspace.xml
+--- a/../3d-printing/.idea/workspace.xml	(revision c18eeb69f026a645d0e66025eafaf9e9c32cab8e)
++++ b/../3d-printing/.idea/workspace.xml	(date 1771837008067)
+@@ -4,8 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="81f0499d-954d-4001-9617-4927e5132806" name="Changes" comment="project setup">
+-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
++    <list default="true" id="81f0499d-954d-4001-9617-4927e5132806" name="Changes" comment="Setting the project up">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -34,6 +34,9 @@
+   <component name="McpProjectServerCommands">
+     <commands />
+     <urls />
++  </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectColorInfo"><![CDATA[{
+   "associatedIndex": 2
+@@ -77,7 +80,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1771704149031</updated>
+-      <workItem from="1771704150102" duration="4359000" />
++      <workItem from="1771704150102" duration="5910000" />
+     </task>
+     <task id="LOCAL-00001" summary="project setup">
+       <option name="closed" value="true" />
+@@ -95,7 +98,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1771707601837</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Setting the project up">
++      <option name="closed" value="true" />
++      <created>1771708652755</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1771708652755</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -103,6 +114,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="project setup" />
+-    <option name="LAST_COMMIT_MESSAGE" value="project setup" />
++    <MESSAGE value="Setting the project up" />
++    <option name="LAST_COMMIT_MESSAGE" value="Setting the project up" />
+   </component>
+ </project>
+\ No newline at end of file
